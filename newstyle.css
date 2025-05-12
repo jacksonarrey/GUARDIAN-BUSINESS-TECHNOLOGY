@@ -1,0 +1,82 @@
+* {
+      box-sizing: border-box;
+    }
+
+    
+
+    .carousel-container {
+      background: white;
+      width: 90%;
+      max-width: 500px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      padding: 20px;
+      margin: 20px auto;
+    }
+
+    .carousel-slide {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .testimonial {
+      min-width: 100%;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #3498db;
+    }
+
+    .testimonial p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .testimonial h3 {
+      margin: 10px 0 0;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .carousel-button {
+      position: relative;
+      top: 50%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .carousel-button button {
+      background: #3498db;
+      border: none;
+      color: white;
+      padding: 5px 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background 0.3s;
+
+    }
+
+    .carousel-button button:hover {
+      background: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      .testimonial p {
+        font-size: 14px;
+      }
+
+      .carousel-buttons button {
+        padding: 8px 12px;
+      }
+    }

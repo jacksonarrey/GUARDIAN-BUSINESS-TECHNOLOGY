@@ -1155,8 +1155,7 @@ h2{
     width: 60%; 
     background-color: #f0f0f0;
     padding: 20px;
-    margin-right: 5px;
-    height: 100%;
+
     border-radius: 20px;
     
   }
@@ -1196,9 +1195,7 @@ h2{
   @media screen and (max-width: 768px) {
     .co_container {
         flex-direction: column; 
-        height: auto;
         align-items: center;
-        height: 280vh;
     }
     
     body .graphic{
@@ -1207,12 +1204,12 @@ h2{
       }
 
       .left-column img{
-        height: 150px;
+        height: 250px;
         width: 100%;
       }
 
     .left-column{
-        width: 90%;
+        width: 95%;
         margin-right: 0;
         margin-bottom: 10px; 
         height: 100%;
@@ -1606,3 +1603,7 @@ button {
     }
     
 }
+
+/* testimonials */
+
+ 
