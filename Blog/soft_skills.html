@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mastering Digital Marketing in 2025</title>
+  <link rel="stylesheet" href="style_new.css" />
+</head>
+<body>
+    <style>
+        /* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* ==== NAVBAR ==== */
+header {
+  background: #002b5b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00c3ff;
+}
+
+/* ==== MOBILE MENU ==== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #002b5b;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  gap: 25px;
+  transition: left 0.4s ease;
+  z-index: 999;
+}
+
+.mobile-nav.show {
+  left: 0;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+.mobile-nav a:hover {
+  color: #00c3ff;
+}
+
+/* ==== HERO ==== */
+.hero {
+  background: linear-gradient(120deg, #002b5b, #004aad);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ==== BLOG SECTION ==== */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 50px 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  color: #002b5b;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #004aad;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  color: #00c3ff;
+}
+
+/* ==== ARTICLE PAGE ==== */
+.article {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.article img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  color: #002b5b;
+  margin-bottom: 15px;
+}
+
+.article p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background: #001d3d;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+    </style>
+  <header>
+    <div class="logo">
+      <img src="Images/GBand T logo-Recovered.png3.png" alt="GBandT Logo" />
+      <h2>Guardian Business & Tech</h2>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="index.html">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="index.html">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <section class="article">
+    <img src="GBand T logo-Recovered.png3.png" alt="Digital Marketing">
+    <h2>Mastering Digital Marketing in 2025</h2>
+    <p>Digital marketing in 2025 is more dynamic than ever. The integration of AI, automation, and analytics has transformed how businesses reach their customers.</p>
+    <p>Brands that embrace personalized strategies, storytelling, and data-driven campaigns are outperforming competitors. The future belongs to those who can creatively blend technology with human insight.</p>
+    <p>At Guardian Business & Technology, we equip learners with the tools to adapt to this evolving space, ensuring they remain at the forefront of innovation.</p>
+    <a href="digital_marketing.html" class="read-more">← Back to Blog</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guardian Business & Technology | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

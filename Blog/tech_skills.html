@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Skills for the Future | Guardian Business & Technology</title>
+  <link rel="stylesheet" href="stylenew.css" />
+</head>
+<body>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+header {
+  background-color: #003366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ccff;
+}
+
+/* ===== Mobile Menu ===== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #003366;
+  padding-top: 60px;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.4s ease;
+  z-index: 200;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.mobile-nav.show {
+  left: 0;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #003366, #00509e);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* ===== Blog Section ===== */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00509e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  color: #00ccff;
+}
+
+/* ===== Article Page ===== */
+.article {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.article img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.article p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+  </style>
+  <header>
+    <div class="logo">
+      <img src="GBand T logo-Recovered.png3.png" alt="GBT Logo" />
+      <h2>Guardian Business & Tech</h2>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="#">Services</a>
+      <a href="index.html">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="#">Services</a>
+    <a href="Blog/digital_marketing.html">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <section class="article">
+    <img src="image_blog/be5bed4ff60b3a28c326aa642d8d6dac.jpg" alt="Technology">
+    <h2>Tech Skills for the Future</h2>
+
+    <p>Technology continues to reshape the way we work, live, and learn. From artificial intelligence to web development and cybersecurity, the future belongs to those who can adapt to digital transformation.</p>
+
+    <p>Employers are now prioritizing candidates who understand how to use tech tools effectively — not just programmers, but creative thinkers who can combine technical knowledge with business strategy.</p>
+
+    <p>At <strong>Guardian Business & Technology</strong>, our training programs help participants develop practical, job-ready tech skills such as digital marketing, graphic design, web development, and computer literacy. These competencies make our graduates ready for the digital economy.</p>
+
+    <p>Learning technology today is about more than keeping up — it’s about creating opportunities for the future. The earlier you start, the further you’ll go.</p>
+
+    <a href="digital_marketing.html" class="read-more">← Back to Blog</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guardian Business & Technology | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

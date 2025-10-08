@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Learn Graphic Design | Guardian Business & Technology</title>
+  <link rel="stylesheet" href="style_new.css" />
+</head>
+<body>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+header {
+  background-color: #003366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ccff;
+}
+
+/* ===== Mobile Menu ===== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #003366;
+  padding-top: 60px;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.4s ease;
+  z-index: 200;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.mobile-nav.show {
+  left: 0;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #003366, #00509e);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* ===== Blog Section ===== */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00509e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  color: #00ccff;
+}
+
+/* ===== Article Page ===== */
+.article {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.article img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.article p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+  </style>
+  <header>
+    <div class="logo">
+      <img src="Images/GBand T logo-Recovered.png3.png" alt="GBandT Logo" />
+      <h2>Guardian Business & Tech</h2>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="index.html">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="index.html">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <section class="article">
+    <img src="https://images.unsplash.com/photo-1581090700227-1c8a1a2c8b8f" alt="Graphic Design">
+    <h2>Why Learn Graphic Design</h2>
+
+    <p>Graphic design is the visual language that connects ideas, emotions, and brands with audiences. In today’s digital-first world, design is more than aesthetics — it’s strategy, identity, and communication.</p>
+
+    <p>Whether you’re building a business, launching a social media campaign, or developing your personal brand, design is what captures attention and drives engagement. From logos and branding to digital ads and web graphics, visual storytelling has become an essential skill.</p>
+
+    <p>At <strong>Guardian Business & Technology</strong>, we train learners to use tools like Adobe Photoshop, Illustrator, and Canva to produce professional-grade designs. Beyond tools, we emphasize creativity, layout balance, color theory, and communication — the real ingredients of a successful designer.</p>
+
+    <p>Graphic design skills open doors to freelance work, marketing positions, and entrepreneurship. It’s a skill that’s not just in demand — it’s empowering.</p>
+
+    <a href="digital_marketing.html" class="read-more">← Back to Blog</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guardian Business & Technology | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
