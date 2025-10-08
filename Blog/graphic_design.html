@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Why Learn Graphic Design | Guardian Business & Technology</title>
   <link rel="stylesheet" href="style_new.css" />
+  <link rel="shortcut icon" type="x-icon" href="Images/GBand T logo-Recovered.png3.png">
 </head>
 <body>
   <style>
@@ -22,7 +23,7 @@ body {
 
 /* ===== Navbar ===== */
 header {
-  background-color: #003366;
+  background-color: #0a0b0c;
   color: white;
   display: flex;
   align-items: center;
@@ -56,7 +57,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #00ccff;
+  color: #f11606;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 3px;
+
+
 }
 
 /* ===== Mobile Menu ===== */
@@ -80,7 +86,7 @@ nav a:hover {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #003366;
+  background-color: #040505;
   padding-top: 60px;
   flex-direction: column;
   gap: 20px;
@@ -222,16 +228,16 @@ footer p {
   </style>
   <header>
     <div class="logo">
-      <img src="Images/GBand T logo-Recovered.png3.png" alt="GBandT Logo" />
+      <img src="image_blog/GBandT LOGO.png" alt="GBandT Logo" />
       <h2>Guardian Business & Tech</h2>
     </div>
 
     <nav>
-      <a href="index.html">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="index.html">Blog</a>
-      <a href="#">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="../About.html">About</a>
+      <a href="../service.html">Services</a>
+      <a href="digital_marketing.html">Blog</a>
+      <a href="../Contact.html">Contact</a>
     </nav>
 
     <div class="menu-toggle" id="menu-toggle">
@@ -240,15 +246,15 @@ footer p {
   </header>
 
   <div class="mobile-nav" id="mobile-nav">
-    <a href="index.html">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="index.html">Blog</a>
-    <a href="#">Contact</a>
+    <a href="../index.html">Home</a>
+      <a href="../About.html">About</a>
+      <a href="../service.html">Services</a>
+      <a href="digital_marketing.html">Blog</a>
+      <a href="../Contact.html">Contact</a>
   </div>
 
   <section class="article">
-    <img src="https://images.unsplash.com/photo-1581090700227-1c8a1a2c8b8f" alt="Graphic Design">
+    <img src="image_blog/df5fc1e693a5a491d64a75ecd769a73f.jpg" alt="Graphic Design">
     <h2>Why Learn Graphic Design</h2>
 
     <p>Graphic design is the visual language that connects ideas, emotions, and brands with audiences. In today’s digital-first world, design is more than aesthetics — it’s strategy, identity, and communication.</p>
@@ -266,7 +272,7 @@ footer p {
     <p>&copy; 2025 Guardian Business & Technology | All Rights Reserved</p>
   </footer>
 
-  <script>
+   <script>
     const menuToggle = document.getElementById("menu-toggle");
     const mobileNav = document.getElementById("mobile-nav");
     menuToggle.addEventListener("click", () => {
